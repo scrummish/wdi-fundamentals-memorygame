@@ -13,8 +13,10 @@ cardsInPlay.push(cardTwo);
 console.log("User flipped queen");
 console.log("User flipped king");
 
-if (cardsInPlay.length === 2){
-    if (cardsInPlay[0] === cardsInPlay[1]){
-        alert("You found a match!");
-    }   else alert("Sorry, try again."); 
+switch(cardsInPlay.length === 2) {
+    case cardsInPlay[0] === cardsInPlay[1]:
+        alert("You found a match!")
+        break;
+    default:
+        alert("Sorry, try again.")
 }
